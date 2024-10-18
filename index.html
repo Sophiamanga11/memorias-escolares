@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diário Mágico de Sophia">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Diário Mágico de Sophia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>✨ Diário Mágico de Sophia ✨</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('gallery')">Galeria Encantada</a></li>
+                <li><a href="#" onclick="showSection('info')">Histórias Mágicas</a></li>
+                <li><a href="#" onclick="showSection('menu')">Menu Secreto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container" id="content">
+        <!-- Seção Galeria -->
+        <section class="gallery" id="gallery">
+            <h2>Galeria Encantada</h2>
+            <div class="photo-section" onclick="showInfo(1)">
+                <img src="Amigonas.jpg" alt="Amigas que muito considero e gosto">
+                <div class="overlay"><p>✨ Melhores Amizades ✨</p></div>
+            </div>
+            <div class="photo-section" onclick="showInfo(2)">
+                <img src="Conheceu.jpg" alt="Tempo Que conheci meu namorado">
+                <div class="overlay"><p>✨ Começo do Relacionamento ✨</p></div>
+            </div>
+            <div class="photo-section" onclick="showInfo(3)">
+                <img src="InterclasseV.jpg" alt="interclasse de Volei">
+                <div class="overlay"><p>✨ Dia de Vitória ✨</p></div>
+            </div>
+        </section>
+        
+        <!-- Seção Informações -->
+        <section class="info" id="info" style="display: none;">
+            <h2>Histórias Mágicas</h2>
+            <div class="story">
+                <h3>✨ Melhores Amizades ✨</h3>
+                <p>Essas são as meninas que eu sinto um carinho enorme por ter a amizade delas comigo, sempre estiveram comigo me apoiando, me ensinado oq era ser amiga de verdade e me mostrando que tenho amigas para poder contar!</p>
+            </div>
+            <div class="story">
+                <h3>✨ Começo do Relacionamento ✨</h3>
+                <p>Quando eu conheci o meu namorado… era 2023 e por uma coincidência caímos na msm sala de aula, ali surgiu uma amizade sem igual, viramos melhores amigos… nunca se desgrudávamos para nada, passou 4 meses dessa grande amizade que criamos e ele me pediu em namoro, e o tempo passou tão rápido que já completamos 1 ano e 3 meses juntos de muita amizade e companheirismo… E cada dia que passa vejo o quanto eu sou feliz!</p>
+            </div>
+            <div class="story">
+                <h3>✨ Dia de Vitória ✨</h3>
+                <p>Aqui minha sala 2°G estava participando do interclasse de vôlei e estávamos na final contra um outro 2° ano, e como nossa torcida não era fraca fizemos de tudo para dar apoio ao jogadores, compramos tinta para pintar o rosto e criamos até música para dar motivação… E dps te um recreio inteiro de muita torcida vencemos o interclasse!</p>
+            </div>
+            <div class="story">
+                <h3>✨ Banho de Chuva ✨</h3>
+                <p>Era 18:00 da tarde o horário que eu saia do colégio com meu namorado e estava uma chuva muito forte, e como eu ia de apé até o ponto de ônibus e ele de bicicleta não tinha muito oq fazer eu subi no pezinho da bicicleta e descemos uma rua dando muita risada e chuva na cara assim que chegamos no posto tivemos que tirar essa foto para lembrar do nosso banho de chuva inesquecível</p>
+            </div>
+            <div class="story">
+                <h3>✨ Amiga Thays ✨</h3>
+                <p>Thays… uma das minhas melhores amigas, eu conheci no 1 ano do ensino médio e desde então passamos por altos e baixos e continuamos com a nossa amizade fortalecida, e hoje sabemos que se fortalecemos cada dia mais uma na outra… Nos piores momentos ela esteve comigo e eu estive com ela!</p>
+            </div>
+            <div class="story">
+                <h3>✨ 3°E ✨</h3>
+                <p>Esse é meu último ano, com essa turma, minha primeira formatura e ótimas memórias que estará pra sempre aqui nos meus divertidamentes!</p>
+            </div>
+        </section>
+        
+        <!-- Seção Menu -->
+        <section class="menu" id="menu" style="display: none;">
+            <h2>Menu Secreto</h2>
+            <p>Bem-vindo ao Menu Secreto! Escolha sua próxima aventura:</p>
+            <div class="menu-images">
+                <div class="menu-item" onclick="alert('Aventura voltando de Bicicleta!')">
+                    <img src="BanhoC.jpg" alt="Banho de Chuva" />
+                    <p>✨ Banho de Chuva ✨</p>
+                </div>
+                <div class="menu-item" onclick="alert('Amiga, muito considerada, Thays!')">
+                    <img src="Thays.jpg" alt="Amiga Thays" />
+                    <p>✨ Amiga Thays ✨</p>
+                </div>
+                <div class="menu-item" onclick="alert('Último ano escolar!')">
+                    <img src="3E.jpg" alt="Último ano Escolar!" />
+                    <p>✨ 3°E ✨</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Morelli 2024, Sophia 3°E - Todos os direitos reservados. 🌟</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
